@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ data.name if data.name else "Portfolio" }}</title>
+  <style>
+    {{ css_style | safe }}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <header>
+      {% if data.name %}
+      <h1 class="user-name">{{ data.name }}</h1>
+      {% endif %}
+
+      {% if data.headline %}
+      <p class="user-headline">{{ data.headline }}</p>
+      {% endif %}
+
+      {% if data.summary %}
+      <p class="user-summary">{{ data.summary }}</p>
+      {% endif %}
+
+      {% if data.contact %}
+      <div class="contact-list">
+        {% if data.contact.email %}
+        <a href="mailto:{{ data.contact.email }}" class="contact-item">✉ {{ data.contact.email }}</a>
+        {% endif %}
+        {% if data.contact.phone %}
+        <span class="contact-item">📞 {{ data.contact.phone }}</span>
+        {% endif %}
+        {% if data.contact.location %}
+        <span class="contact-item">📍 {{ data.contact.location }}</span>
+        {% endif %}
+        {% if data.contact.linkedin %}
+        <a href="{{ data.contact.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-item">LinkedIn</a>
+        {% endif %}
+        {% if data.contact.github %}
+        <a href="{{ data.contact.github }}" target="_blank" rel="noopener noreferrer" class="contact-item">GitHub</a>
+        {% endif %}
+        {% if data.contact.website %}
+        <a href="{{ data.contact.website }}" target="_blank" rel="noopener noreferrer" class="contact-item">Website</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </header>
+
+    <!-- Skills Section -->
+    {% if data.skills and data.skills | length > 0 %}
+    <section class="card-section">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-wrapper">
+        {% for skill in data.skills %}
+        <span class="skill-tag">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Experience Section -->
+    {% if data.experience and data.experience | length > 0 %}
+    <section class="card-section">
+      <h2 class="section-title">Experience</h2>
+      <div class="grid-container">
+        {% for exp in data.experience %}
+        <div class="card">
+          <h3 class="card-title">{{ exp.role }}</h3>
+          <p class="card-subtitle">{{ exp.company }}{% if exp.location %} — {{ exp.location }}{% endif %}</p>
+          {% if exp.dates %}
+          <p class="card-meta">{{ exp.dates }}</p>
+          {% endif %}
+          {% if exp.responsibilities and exp.responsibilities | length > 0 %}
+          <ul>
+            {% for resp in exp.responsibilities %}
+            <li>{{ resp }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Projects Section -->
+    {% if data.projects and data.projects | length > 0 %}
+    <section class="card-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid-container">
+        {% for proj in data.projects %}
+        <div class="card">
+          <h3 class="card-title">{{ proj.title }}</h3>
+          {% if proj.description %}
+          <p class="card-body">{{ proj.description }}</p>
+          {% endif %}
+          {% if proj.technologies and proj.technologies | length > 0 %}
+          <div class="skills-wrapper" style="margin-top: 0.75rem;">
+            {% for tech in proj.technologies %}
+            <span class="skill-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if proj.link %}
+          <div style="margin-top: 1rem;">
+            <a href="{{ proj.link }}" target="_blank" rel="noopener noreferrer" class="contact-item" style="font-size: 0.85rem;">View Project →</a>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Education Section -->
+    {% if data.education and data.education | length > 0 %}
+    <section class="card-section">
+      <h2 class="section-title">Education</h2>
+      <div class="grid-container">
+        {% for edu in data.education %}
+        <div class="card">
+          <h3 class="card-title">{{ edu.degree }}</h3>
+          <p class="card-subtitle">{{ edu.institution }}</p>
+          {% if edu.dates %}
+          <p class="card-meta">{{ edu.dates }}</p>
+          {% endif %}
+          {% if edu.details %}
+          <p class="card-body">{{ edu.details }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Achievements Section -->
+    {% if data.achievements and data.achievements | length > 0 %}
+    <section class="card-section">
+      <h2 class="section-title">Achievements & Certifications</h2>
+      <div class="grid-container">
+        {% for ach in data.achievements %}
+        <div class="card">
+          <h3 class="card-title">{{ ach.title }}</h3>
+          {% if ach.description %}
+          <p class="card-body">{{ ach.description }}</p>
+          {% endif %}
+          {% if ach.date %}
+          <p class="card-meta" style="margin-top: 0.5rem;">{{ ach.date }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+  </div>
+</body>
+</html>
