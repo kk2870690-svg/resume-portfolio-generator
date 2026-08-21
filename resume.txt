@@ -1,48 +1,42 @@
-Kaushal Kumar
-2nd-Year CS (AIML) Student | Machine Learning Enthusiast
-Email: kaushal_cs.aiml@ac.in | Phone: +91 123456
-Location: Mathura, Uttar Pradesh, India
-LinkedIn: https://linkedin.com/in/kaushal-kumar-aiml
-GitHub: https://github.com/kaushal-kumar-dev
-Website: https://kaushalkumar.dev
+KAUSHAL KUMAR
+kaushal.kumar_cs.aiml25@gla.ac.in | +91 123456789 | Mathura, Uttar Pradesh, India
+LinkedIn: https://www.linkedin.com/in/kaushal-kumar-a3a904403
+Portfolio: https://kk2870690-svg.github.io/resume-portfolio-generator/
+GitHub: https://github.com/kk2870690-svg
 
-SUMMARY
-Passionate and driven 2nd-year B.Tech CS (AIML) student at GLA University, Mathura with a deep interest in Machine Learning and Data Science. Built strong fundamentals in Python and C during the first year and continuously expanding programming capabilities day by day. Currently developing expertise in Java, Object-Oriented Programming, and web integration while building practical tools like dynamic dashboards and automated resume generators.
-
-SKILLS
-- Programming Languages: Python, C, Java (Learning & Improving), SQL
-- Machine Learning & Data Analytics: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
-- Web & Development Tools: HTML5, CSS3, Streamlit, Git, GitHub, VS Code
-- Core Concepts: Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Data Visualization, Model Building Basics
+PROFESSIONAL SUMMARY
+Motivated B.Tech Computer Science and AIML student with a strong foundation in Python, Machine Learning, and API integration. Experienced in developing full-stack AI automation workflows, structured LLM extraction pipelines, and database management systems. Passionate about applying machine learning concepts to solve practical problems.
 
 EDUCATION
 Bachelor of Technology in Computer Science & Engineering (AIML)
 GLA University, Mathura
-Expected Graduation: June 2028
-- Current Status: 2nd Year (Semester IV)
-- Relevant Coursework: Data Structures & Algorithms, Python Programming, Object-Oriented Programming in Java, Machine Learning Foundations, Relational Databases
+2025 – Present
 
-EXPERIENCE
-Student Developer & ML Trainee | GLA University | Mathura, India
-August 2025 - Present
-- Developing practical machine learning and web projects using Python and modern data science libraries.
-- Consistently solving coding challenges in C and Python to strengthen core algorithmic problem-solving skills.
-- Collaborating with peers on technical coursework and participating in hands-on workshops on AI and Java programming.
+TECHNICAL SKILLS
+- Programming Languages: Python, C, JavaScript, SQL
+- Machine Learning & AI: Prompt Engineering, Google Gemini API, Computer Vision, OCR, LLM Application Development
+- Databases & Tools: MySQL, Git, GitHub, VS Code, Jinja2, HTML5/CSS3
+- Core Concepts: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), REST APIs
 
 PROJECTS
-AI Automated Resume & Portfolio Generator
-Technologies: Python, Gemini API, HTML5, CSS3, Jinja2
-- Developed an automated application that parses user resume text into structured JSON and generates responsive, styled HTML portfolio websites.
-- Implemented robust error handling, prompt engineering constraints, and custom CSS design themes.
-- Link: https://github.com/kaushal-kumar-dev/resume-portfolio-generator
+AI-Assisted Resume-to-Portfolio Generator
+- Technologies: Python, Google Gemini API, Jinja2, HTML/CSS, Git, GitHub Pages
+- Developed an automated pipeline that extracts structured entities from raw resume text using Gemini LLM and dynamic JSON schema enforcement.
+- Integrated Jinja2 templates and a custom responsive dark-themed UI to render static portfolio websites.
+- Implemented robust error handling, model fallback mechanisms, and hosted the project live via GitHub Pages.
+- Live Link: https://kk2870690-svg.github.io/resume-portfolio-generator/
 
-Interactive Data Analytics Dashboard
-Technologies: Python, Pandas, Matplotlib, Seaborn, Streamlit
-- Created an interactive web-based dashboard allowing users to upload datasets and visualize key insights in real time through dynamic charts and plots.
-- Designed key performance indicator (KPI) metric cards and customizable filter options for easy data exploration.
-- Link: https://github.com/kaushal-kumar-dev/data-analytics-dashboard
+Smart Book Recommendation & Cover Recognition System
+- Technologies: Python, OpenCV, Tesseract OCR, Machine Learning
+- Built a computer vision pipeline to extract book titles and metadata directly from cover images.
+- Designed recommendation logic matching extracted genre and author data against indexed reading datasets.
 
-ACHIEVEMENTS & CERTIFICATIONS
-- Active Member of University Coding & AI/ML Student Club (GLA University)
-- Completed Python Programming & Data Science Foundations Coursework
-- Successfully built and deployed multiple end-to-end Python applications in 2nd Year
+Library Management System
+- Technologies: Python, SQL, Relational Database Management
+- Designed relational database schemas, entity-relationship diagrams, and primary/foreign key constraints to handle book tracking and user records.
+- Implemented a complete management interface with input validation and search indexing.
+
+EXPERIENCE & LEADERSHIP
+Technical Project Contributor & Workflow Manager
+- Managed automated data extraction pipelines and version-controlled collaborative workflows on GitHub.
+- Oversaw administrative data handling and operational logistics for regional transport service operations.
