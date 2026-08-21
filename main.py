@@ -12,7 +12,7 @@ from google.genai import types
 RESUME_FILE = "resume.txt"
 TEMPLATE_FILE = "template.html"
 CSS_FILE = "style.css"
-OUTPUT_FILE = "portfolio.html"
+OUTPUT_FILE = "index.html"
 MIN_RESUME_LENGTH = 50
 
 
